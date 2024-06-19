@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import HeadComponent from './components/HeadComponent/HeadComponent';
+import WelcomePopup from './components/WelcomePopup/WelcomePopup';
+import DesktopIcon from './components/DesktopIcon/DesktopIcon';
+import TaskBar from './components/TaskBar/TaskBar';
+import StartMenu from './components/StartMenu/StartMenu';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <HeadComponent />
+      <WelcomePopup />
+      <div id="desktop-icons">
+        <DesktopIcon src="/img/icons/Personal.png" alt="Personal Info" label="Personal Info" dataLaunch="personal" />
+        <DesktopIcon src="/img/icons/LinkedIn.png" alt="LinkedIn" label="LinkedIn" dataLaunch="linkedin" />
+        <DesktopIcon src="/img/icons/Email.png" alt="Email" label="Email" dataLaunch="email" />
+        <DesktopIcon src="/img/icons/GitHub.png" alt="GitHub" label="GitHub" dataLaunch="github" />
+        <DesktopIcon src="/img/icons/Discord.png" alt="Discord" label="Discord" dataLaunch="discord" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <TaskBar />
+      <StartMenu />
+    </div>
+  );
 }
 
-export default App
+export default App;
