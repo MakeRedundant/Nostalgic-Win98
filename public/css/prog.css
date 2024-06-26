@@ -1,5 +1,5 @@
 /* --- RESUME --- */
-.window__resume {
+/* .window__resume {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -127,4 +127,4 @@
 
 .window[data-name="Run"] .run__runbar > span {
     margin: 0 10px 0 5px;
-}
+} */

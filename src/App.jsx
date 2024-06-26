@@ -1,40 +1,41 @@
 import { useState, useEffect } from 'react';
+
 import '../public/css/98.css';
 import '../public/css/index.css';
 import '../public/css/prog.css';
 import '../public/lib/xterm/xterm.css';
 
-import WindowsFlagSmall from '../public/img/taskbar/WindowsFlagSmall.png';
-import MyComputer from '../public/img/desktop/MyComputer.png';
-import NetworkNeighborhood from '../public/img/desktop/NetworkNeighborhood.png';
-import MyDocuments from '../public/img/desktop/MyDocuments.png';
-import Bitmap from '../public/img/desktop/Bitmap.png';
-import MyGames from '../public/img/desktop/MyGames.png';
-import Winamp from '../public/img/special/winamp.png';
-import TextFile from '../public/img/desktop/TextFile.png';
-import Email from '../public/img/desktop/Email.png';
-import MSDOS from '../public/img/desktop/MSDOS.png';
-import RecyclingBinFull from '../public/img/desktop/RecyclingBinFull.png';
-import StartIcon from '../public/img/taskbar/Start.png';
-import ShowDesktopIcon from '../public/img/taskbar/ShowDesktop.png';
-import IESmall from '../public/img/taskbar/IESmall.png';
-import OutlookExpress from '../public/img/taskbar/OutlookExpress.png';
-import MSDOSIcon from '../public/img/taskbar/msdos.png';
-import TaskScheduler from '../public/img/taskbar/TaskScheduler.png';
-import Volume from '../public/img/taskbar/Volume.png';
-import ShutDownIcon from '../public/img/startmenu/ShutDown.png';
-import LogOffIcon from '../public/img/startmenu/LogOff.png';
-import RunIcon from '../public/img/startmenu/Run.png';
-import HelpIcon from '../public/img/startmenu/Help.png';
-import FindIcon from '../public/img/startmenu/Find.png';
-import SettingsIcon from '../public/img/startmenu/Settings.png';
-import DocumentsIcon from '../public/img/startmenu/Documents.png';
-import SubFolder from '../public/img/startmenu/SubFolder.png';
-import FavoritesIcon from '../public/img/startmenu/Favorites.png';
-import ProgramsIcon from '../public/img/startmenu/Programs.png';
-import ProgMan from '../public/img/desktop/ProgMan.png';
-import NotepadIcon from '../public/img/desktop/Notepad.png';
-import EmailIcon from '../public/img/desktop/Email.png';
+import WindowsFlagSmall from '/img/taskbar/WindowsFlagSmall.png';
+import MyComputer from '/img/desktop/MyComputer.png';
+import NetworkNeighborhood from '/img/desktop/NetworkNeighborhood.png';
+import MyDocuments from '/img/desktop/MyDocuments.png';
+import Bitmap from '/img/desktop/Bitmap.png';
+import MyGames from '/img/desktop/MyGames.png';
+import Winamp from '/img/special/winamp.png';
+import TextFile from '/img/desktop/TextFile.png';
+import Email from '/img/desktop/Email.png';
+import MSDOS from '/img/desktop/MSDOS.png';
+import RecyclingBinFull from '/img/desktop/RecyclingBinFull.png';
+import StartIcon from '/img/taskbar/Start.png';
+import ShowDesktopIcon from '/img/taskbar/ShowDesktop.png';
+import IESmall from '/img/taskbar/IESmall.png';
+import OutlookExpress from '/img/taskbar/OutlookExpress.png';
+import MSDOSIcon from '/img/taskbar/msdos.png';
+import TaskScheduler from '/img/taskbar/TaskScheduler.png';
+import Volume from '/img/taskbar/Volume.png';
+import ShutDownIcon from '/img/startmenu/ShutDown.png';
+import LogOffIcon from '/img/startmenu/LogOff.png';
+import RunIcon from '/img/startmenu/Run.png';
+import HelpIcon from '/img/startmenu/Help.png';
+import FindIcon from '/img/startmenu/Find.png';
+import SettingsIcon from '/img/startmenu/Settings.png';
+import DocumentsIcon from '/img/startmenu/Documents.png';
+import SubFolder from '/img/startmenu/SubFolder.png';
+import FavoritesIcon from '/img/startmenu/Favorites.png';
+import ProgramsIcon from '/img/startmenu/Programs.png';
+import ProgMan from '/img/desktop/ProgMan.png';
+import NotepadIcon from '/img/desktop/Notepad.png';
+import EmailIcon from '/img/desktop/Email.png';
 
 const loadScript = (src, type = 'text/javascript', defer = false) => {
   const script = document.createElement('script');
@@ -63,30 +64,30 @@ const App = () => {
 
   useEffect(() => {
     const scripts = [
-      'public/lib/inobounce.js',
-      'public/lib/xterm/xterm.js',
-      'public/lib/xterm/fit.js',
-      'public/lib/xterm/attach.js',
-      'public/index.js',
-      'public/windows.js',
-      'public/desktop.js',
-      'public/startmenu.js',
-      'public/programs.js',
-      'public/fs.js',
-      'public/prog/resume.js',
-      'public/prog/welcome.js',
-      'public/prog/prompt.js',
-      'public/prog/dialog.js',
-      'public/prog/explorer.js',
-      'public/prog/portfolio.js',
-      'public/prog/notepad.js',
-      'public/prog/email.js',
-      'public/prog/shutdown.js',
-      'public/prog/fullscreen.js',
-      'public/prog/run.js',
-      'public/prog/photo.js',
-      'public/prog/jsdos.js',
-      'public/prog/internet.js',
+      '/lib/inobounce.js',
+      '/lib/xterm/xterm.js',
+      '/lib/xterm/fit.js',
+      '/lib/xterm/attach.js',
+      '/index.js',
+      '/windows.js',
+      '/desktop.js',
+      '/startmenu.js',
+      '/programs.js',
+      '/fs.js',
+      '/prog/resume.js',
+      '/prog/welcome.js',
+      '/prog/prompt.js',
+      '/prog/dialog.js',
+      '/prog/explorer.js',
+      '/prog/portfolio.js',
+      '/prog/notepad.js',
+      '/prog/email.js',
+      '/prog/shutdown.js',
+      '/prog/fullscreen.js',
+      '/prog/run.js',
+      '/prog/photo.js',
+      '/prog/jsdos.js',
+      '/prog/internet.js',
     ];
     scripts.forEach(src => loadScript(src, 'text/javascript', true));
   }, []);
@@ -187,14 +188,14 @@ const App = () => {
           <div className="desktop-icon" data-launch="winamp">
             <img src={Winamp} alt="winamp" />
             <div className="desktop-icon__shortcut">
-              <img src="../public/img/ShortcutIcon.png" alt="Shortcut" />
+              <img src="/img/ShortcutIcon.png" alt="Shortcut" />
             </div>
             <span>Winamp</span>
           </div>
           <div className="desktop-icon" data-launch="notepad">
             <img src={TextFile} alt="TextFile" />
             <div className="desktop-icon__shortcut">
-              <img src="../public/img/ShortcutIcon.png" alt="Shortcut" />
+              <img src="/img/ShortcutIcon.png" alt="Shortcut" />
             </div>
             <span>Text File</span>
           </div>
