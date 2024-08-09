@@ -7,7 +7,7 @@
                 height: 100%; /* Use percentage to adapt to iframe height */
                 margin: 0;
                 padding: 0;
-                resize: both; /* Allow resizing */
+                resize: none; 
                 overflow: auto; /* Provide scrollbars if content overflows */
             }
         </style>
@@ -17,9 +17,9 @@
     <body>
         <div id="jsdos">
         <script>
-         emulators.pathPrefix = "../";
-         Dos(document.getElementById("jsdos"))
-             .run("wolfenstein.jsdos");
+            emulators.pathPrefix = "../";
+            Dos(document.getElementById("jsdos"))
+                .run("lotus.jsdos");
         </script>
     </body>
 </html>
